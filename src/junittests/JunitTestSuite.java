@@ -3,7 +3,10 @@
  * and open the template in the editor.
  */
 package junittests;
+
 import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
 /**
  *
  * @author marcos
@@ -14,4 +17,5 @@ import org.junit.runner.RunWith;
     TestJunit1.class,
     TestJunit2.class
 })
-public class JunitTestSuite { }
+public class JunitTestSuite {
+}
