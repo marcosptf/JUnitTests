@@ -14,6 +14,4 @@ import org.junit.runner.RunWith;
     TestJunit1.class,
     TestJunit2.class
 })
-public class JunitTestSuite {
-    
-}
+public class JunitTestSuite { }
