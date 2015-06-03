@@ -15,36 +15,34 @@ public class main {
     public static void main(String[] args){
         Result result;
                
-//        result = JUnitCore.runClasses(TestJunit.class);
-//        for(Failure failure : result.getFailures()){
-//            System.out.println(failure.toString());
-//        }
-//        System.out.println(result.wasSuccessful());
-//        
-//        result = JUnitCore.runClasses(TestJunit1.class);
-//        for(Failure failure : result.getFailures()){
-//            System.out.println(failure.toString());
-//        }
-//        System.out.println(result.wasSuccessful());
-//        
-//        result = JUnitCore.runClasses(TestJunit2.class);
-//        for(Failure failure : result.getFailures()){
-//            System.out.println(failure.toString());
-//        }
-//        System.out.println(result.wasSuccessful());
-//        
-//        result = JUnitCore.runClasses(TestJunit3.class);
-//        for(Failure failure : result.getFailures()){
-//            System.out.println(failure.toString());
-//        }
-//        System.out.println(result.wasSuccessful());
-        
-        result = JUnitCore.runClasses(TestJunit4.class);
-        result.
+        result = JUnitCore.runClasses(TestJunit.class);
         for(Failure failure : result.getFailures()){
             System.out.println(failure.toString());
         }
         System.out.println(result.wasSuccessful());
+        
+        result = JUnitCore.runClasses(TestJunit1.class);
+        for(Failure failure : result.getFailures()){
+            System.out.println(failure.toString());
+        }
+        System.out.println(result.wasSuccessful());
+        
+        result = JUnitCore.runClasses(TestJunit2.class);
+        for(Failure failure : result.getFailures()){
+            System.out.println(failure.toString());
+        }
+        System.out.println(result.wasSuccessful());
+        
+        result = JUnitCore.runClasses(TestJunit3.class);
+        for(Failure failure : result.getFailures()){
+            System.out.println(failure.toString());
+        }
+        System.out.println(result.wasSuccessful());
+        
+        result = JUnitCore.runClasses(TestJunit4.class);
+        for(Failure failure : result.getFailures()){
+            System.out.println(failure.toString());
+        }
         System.out.println(result.wasSuccessful());
     }
 }
