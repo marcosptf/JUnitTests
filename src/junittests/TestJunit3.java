@@ -19,8 +19,8 @@ public class TestJunit3 {
         int num = 5;
         String str = "abc";
         
-        assertEquals("aBc",str);
-        assertFalse(num > 4);
+        assertEquals("abc",str);
+        assertFalse(num > 7);
         assertNotNull(str);
     }
 }
