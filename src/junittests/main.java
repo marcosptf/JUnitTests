@@ -18,5 +18,12 @@ public class main {
             System.out.println(failure.toString());
         }
         System.out.println(result.wasSuccessful());
+        
+        result = JUnitCore.runClasses(TestJunit2.class);
+        for(Failure failure : result.getFailures()){
+            System.out.println(failure.toString());
+        }
+        System.out.println(result.getClass());
+        System.out.println(result.wasSuccessful());
     }
 }
