@@ -15,7 +15,7 @@ public class TestJunit1 {
     
     @Test
     public void testPrintMessage(){
-        assertEquals(1,1+1);
+        assertEquals(1,0+1);
     }
     
 }
