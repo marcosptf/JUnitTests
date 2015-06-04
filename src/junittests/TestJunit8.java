@@ -1,3 +1,5 @@
+package junittests;
+
 import org.junit.Test;
 
 @Test
