@@ -1,5 +1,7 @@
+package junittests;
+
 public class Employee {
-/*from   ww w  . j  a  va 2s. c o m*/
+
    private String name;
    private double salary;
    private int age;
