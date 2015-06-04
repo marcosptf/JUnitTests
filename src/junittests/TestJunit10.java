@@ -1,14 +1,15 @@
+package junittests;
+
 import static org.junit.Assert.assertEquals;
-/* w  w  w  .  jav  a2  s  .  co  m*/
 import java.util.Arrays;
 import java.util.Collection;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
-public class TestJunit {
+
+public class TestJunit10 {
      private Integer inputNumber;
      private Boolean expectedResult;
      private BusinessLogic logic;
