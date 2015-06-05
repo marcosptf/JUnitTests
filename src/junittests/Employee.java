@@ -44,7 +44,7 @@ public class Employee {
    }
 }
 
-public class EmpBusinessLogic {
+class EmpBusinessLogic {
    // Calculate the yearly salary of employee
    public double calculateYearlySalary(Employee employee){
       double yearlySalary=0;
