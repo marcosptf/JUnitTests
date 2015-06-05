@@ -14,8 +14,18 @@ import org.junit.runners.Suite;
 /* JUnit suite test */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
+    TestJunit.class,
     TestJunit1.class,
-    TestJunit2.class
+    TestJunit2.class,
+    TestJunit3.class,
+    TestJunit4.class,
+    TestJunit5.class,
+    TestJunit6.class,
+    TestJunit7.class,
+    TestJunit8.class,
+    TestJunit9.class
+//    TestJunit10.class,  need mor attencion to see what wrong happened 
+//    Employee.class    => this class dont exist @Test, maybe need to do
 })
 public class JunitTestSuite {
 }
