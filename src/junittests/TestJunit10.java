@@ -3,27 +3,37 @@ package junittests;
 import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Iterator;
+import java.util.Properties;
+import java.util.Set;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import junittests.BussinessLogic;
 import org.junit.runners.Parameterized;
-@RunWith(Parameterized.class)
 
+@RunWith(Parameterized.class)
 public class TestJunit10 {
      private Integer inputNumber;
      private Boolean expectedResult;
-     private BusinessLogic logic;
+     private BussinessLogic logic;
 
      @Before
      public void initialize() {
-        logic = new BusinessLogic();
+        logic = new BussinessLogic();
+//        Properties pro = System.getProperty(null, null);
+        Properties pro = (Properties) this.primeNumbers();
+        Iterator iter = pro.keySet().iterator();
+        for(Object key = new Object[4][4]; iter.hasNext(); key = (Object) iter.next()){
+            this.TestJunitBL((Integer) key,(Boolean) key);
+        }
      }
 
-     public TestJunit(Integer inputNumber, 
-        Boolean expectedResult) {
+     public void TestJunitBL(Integer inputNumber, Boolean expectedResult) {
        System.out.println("TestJunit-> inputNumber:"+inputNumber+" expectedResult:"+expectedResult);
         this.inputNumber = inputNumber;
         this.expectedResult = expectedResult;
+        testPrimeNumberChecker();
      }
 
      @Parameterized.Parameters
