@@ -11,6 +11,8 @@ public class TestJunit5 extends TestCase  {
    
    @Before 
    public void setUp() {
+      /* on this case for example, we can start a transaction, 
+       start a conection with something */
      System.out.println("setup");
       fValue1= 2.0;
       fValue2= 3.0;
@@ -18,7 +20,6 @@ public class TestJunit5 extends TestCase  {
   
    @Test
    public void testAdd() {
-   
       //count the number of test cases
       System.out.println("No of Test Case = "+ this.countTestCases());
     
@@ -34,8 +35,40 @@ public class TestJunit5 extends TestCase  {
       assertEquals(5.0, fValue1+fValue2);
    }
    
-   //tearDown used to close the connection or clean up activities
+  
+   @Test
+   public void testAdd2() {
+      System.out.println("No of Test Case = "+ this.countTestCases());
+      String name= this.getName();
+      System.out.println("Test Case Name = "+ name);
+   }
+   
+  
+   @Test
+   public void testAdd3() {
+      System.out.println("No of Test Case = "+ this.countTestCases());
+      String name= this.getName();
+      System.out.println("Test Case Name = "+ name);
+   }
+   
+  
+   @Test
+   public void testAdd4() {
+      System.out.println("No of Test Case = "+ this.countTestCases());
+      String name= this.getName();
+      System.out.println("Test Case Name = "+ name);
+   }
+  
+   @Test
+   public void testAdd5() {
+      System.out.println("No of Test Case = "+ this.countTestCases());
+      String name= this.getName();
+      System.out.println("Test Case Name = "+ name);
+   }
+   
+   
    public void tearDown() {
+   //tearDown used to close the connection or clean up activities
      System.out.println("clean up.");
    }
 }
