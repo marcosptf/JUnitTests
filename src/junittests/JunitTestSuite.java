@@ -24,7 +24,7 @@ import org.junit.runners.Suite;
     TestJunit7.class,
     TestJunit8.class,
     TestJunit9.class
-//    TestJunit10.class,  need mor attencion to see what wrong happened 
+//    TestJunit10.class,  need more attencion to see what wrong happened 
 //    Employee.class    => this class dont exist @Test, maybe need to do
 })
 public class JunitTestSuite {
